@@ -1,11 +1,14 @@
-import React from 'react';
-import './botonModoOscuro.css'; // Asegúrate de que la ruta del archivo CSS sea correcta
+import React from "react";
+import "./botonModoOscuro.css"; // Asegúrate de que la ruta del archivo CSS sea correcta
 
-const BotonModoOscuro = ({setDarkModeOn, darkModeOn}) => {
+const BotonModoOscuro = ({ setDarkModeOn, darkModeOn }) => {
   return (
     <label className="bb8-toggle">
       <input className="bb8-toggle__checkbox" type="checkbox" />
-      <div className="bb8-toggle__container" onClick={()=>setDarkModeOn(!darkModeOn)}>
+      <div
+        className="bb8-toggle__container"
+        onClick={() => setDarkModeOn(!darkModeOn)}
+      >
         <div className="bb8-toggle__scenery">
           <div className="bb8-toggle__star"></div>
           <div className="bb8-toggle__star"></div>

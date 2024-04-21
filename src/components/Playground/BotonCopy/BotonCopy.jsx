@@ -1,5 +1,5 @@
-import React from 'react';
-import './botonCopy.css'; // Asegúrate de que la ruta del archivo CSS sea correcta
+import React from "react";
+import "./botonCopy.css"; // Asegúrate de que la ruta del archivo CSS sea correcta
 
 const BotonCopy = () => {
   return (
@@ -20,7 +20,7 @@ const BotonCopy = () => {
           x="0"
           y="0"
           viewBox="0 0 6.35 6.35"
-          style={{ enableBackground: 'new 0 0 512 512' }}
+          style={{ enableBackground: "new 0 0 512 512" }}
           xmlSpace="preserve"
         >
           <g>
@@ -40,7 +40,7 @@ const BotonCopy = () => {
           x="0"
           y="0"
           viewBox="0 0 24 24"
-          style={{ enableBackground: 'new 0 0 512 512' }}
+          style={{ enableBackground: "new 0 0 512 512" }}
           xmlSpace="preserve"
         >
           <g>
