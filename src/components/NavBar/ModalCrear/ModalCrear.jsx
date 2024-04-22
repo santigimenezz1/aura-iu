@@ -4,18 +4,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import '../ModalCrear/modalCrear.css'
+import '../ModalCrear/modalCrear.css'
+import TarjetaModalCrear from './TarjetaModalCrear/TarjetaModalCrear';
+import ClearIcon from '@mui/icons-material/Clear';
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
 
 export default function ModalCrear() {
   const [open, setOpen] = React.useState(false);
@@ -24,21 +16,35 @@ export default function ModalCrear() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+         <button onClick={handleOpen} class="btn"><i class="animation"></i>Create<i class="animation"></i>
+    </button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
+        <section className='ModalCrear' >
+          <div className='modalCrear__exit' onClick={()=>handleClose()}>
+          <ClearIcon style={{color:"white"}} fontSize='large' />
+          </div>
+          <h1 className='modal__titulo'>What are you making ?</h1>
+          <div className='container__tarjetaModalCrear'>
+            <div><TarjetaModalCrear text={"Buttons"} /></div>
+            <div><TarjetaModalCrear text={"Cards"} /></div>
+            <div><TarjetaModalCrear text={"Inputs"} /></div>
+            <div><TarjetaModalCrear text={"Forms"} /></div>
+            <div><TarjetaModalCrear text={"Tooltip"} /></div>
+            <div><TarjetaModalCrear text={"Radio buttons"} /></div>
+            <div><TarjetaModalCrear text={"Paterns"} /></div>
+            <div><TarjetaModalCrear text={"Toggle switches"} /></div>
+            <div><TarjetaModalCrear text={"Loaders"} /></div>
+            <div><TarjetaModalCrear text={"Checkboxes"} /></div>
+          </div>
+          <div className='container__modalCrear'>
+          <button className='container__modalCrear__button-siguiente'>Siguiente</button>
+          </div>
+        </section>
       </Modal>
     </div>
   );
