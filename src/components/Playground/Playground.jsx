@@ -3,23 +3,11 @@ import "../Playground/playground.css";
 import ButonToggle from "./BotonToggle/BotonToggle";
 import BotonCopy from "./BotonCopy/BotonCopy";
 import BotonModoOscuro from "./BotonModoOscuro/BotonModoOscuro";
-import * as monaco from 'monaco-editor'    //IMPORTAMOS TODO EL MONACO EDITOR
-import HtmlWorker from 'monaco-editor/esm/vs/language/html/html.worker?worker' //IMPORTAMOS PARA PODER USAR EL HTML DE MONACO EDITOR 
-import editor from '@monaco-editor/react'
+import * as monaco from 'monaco-editor'; // IMPORTAMOS TODO EL MONACO EDITOR
+import HtmlWorker from 'monaco-editor/esm/vs/language/html/html.worker?worker'; // IMPORTAMOS PARA PODER USAR EL HTML DE MONACO EDITOR 
 import { Editor } from "@monaco-editor/react";
 
-
-
-
-
-
-
-
-
-
-
 const Playground = () => {
-
   const [estado, setEstado] = useState("asdasd"); //ESTADO PRINCIPAL
   const [estadoHTML, setEstadoHtml] = useState(""); //ESTADO PARA PLANTILLA HTML
   const [estadoCSS, setEstadoCSS] = useState(""); //ESTADO PARA LOS ESTILOS CSS
@@ -66,6 +54,8 @@ const Playground = () => {
     setEstadoCSS(texto);
   };
 
+
+
   useEffect(() => {
     //CADA VEZ QUE HAYA UN CAMBIO EN EL ESTADO DEL HTML, SE VUELVE A SETEAR UNA NUEVA PLANTILLA HTML EN EL ESTADO PRINCIPAL
     const html = HTML();
@@ -78,14 +68,6 @@ const Playground = () => {
     setEstado(html);
   }, [estadoCSS]);
 
-
-
-  
-  
-
-  const [test, setTest] = useState("<h1>hola como estas</h1>")
-
-  console.log(test)
 
   return (
     <div className="container">
@@ -112,27 +94,34 @@ const Playground = () => {
 
           <section className="container__playground__areas__textArea" >
             <div className={estilos && "areaOn"}> 
-            <Editor                //COMPONENTE EDITOR DE VISUAL STUDIO CODE AGREGADO 
-             height= "500px"  
-             className={estilos && "areaOn"}
-             theme="vs-dark"
-             defaultLanguage="html" 
-             onChange={(value) => actualizarHTML(value)}
-      />
+            <Editor
+                height="500px"
+                defaultLanguage="html"
+                theme="vs-dark"
+                onChange={(value) => actualizarHTML(value)}
+                language="html"
+                options={{
+                  theme: "vs-dark",
+                  fontSize: "16px",
+                  autoClosingBrackets : "always"   //INVESTIGAR LUEGO COMO ACCEDER A ESA PROPIEDAD DEL OBJETO MONACO Y CERRAR LAS ETIQUETAS 
+                }}
+              />
             </div>
          
             <div className={!estilos && "areaOn"} >
-            <Editor                //COMPONENTE EDITOR DE VISUAL STUDIO CODE AGREGADO
-             height= "500px"
-             className={!estilos && "areaOn"}
-             theme="vs-dark"
-             defaultLanguage="javascript" 
-             onChange={(value) => actualizarCSS(value)}
-             
-      />
+              <Editor                
+                height= "500px"
+                className={!estilos && "areaOn"}
+                theme="vs-dark"
+                defaultLanguage="css" 
+                options={{
+                  theme: "vs-dark",
+                  fontSize: "16px",
+                  autoClosingBrackets : "always"   //INVESTIGAR LUEGO COMO ACCEDER A ESA PROPIEDAD DEL OBJETO MONACO Y CERRAR LAS ETIQUETAS 
+                }}
+                onChange={(value) => actualizarCSS(value)}
+              />
             </div>
-
-
           </section>
         </div>
 
