@@ -1,0 +1,64 @@
+/*ESTILOS TARJETA WHITE */
+
+
+.container__tarjetaIframe{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+.container__tarjetaIframe:hover{
+  .container__tarjetaIframe__botonGetCode{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    display: flex;
+  }
+  
+}
+.container__tarjetaIframe__botonGetCode{
+  display: none;
+
+}
+
+.container__tarjetaIframe iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+/*ESTILOS TARJETA DARK */
+
+.container__tarjetaIframe-dark iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.container__tarjetaIframe-dark{
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #212121;
+  cursor: pointer;
+  position: relative;
+}
+.container__tarjetaIframe-dark:hover{
+.container__tarjetaIframe__botonGetCode{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  display: flex;
+}
+
+}
