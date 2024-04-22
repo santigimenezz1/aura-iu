@@ -139,6 +139,13 @@ const Playground = () => {
                 : "container__playground__iframe__botonOscuro__on"
             }
           >
+            {
+              !darkModeOn ?
+            <h1 className="color">#212121</h1>
+            :
+            <h1 className="colorOn">#e8e8e8</h1>
+            }
+
             <BotonModoOscuro
               setDarkModeOn={setDarkModeOn}
               darkModeOn={darkModeOn}
