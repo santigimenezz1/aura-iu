@@ -11,8 +11,11 @@ const Playground = () => {
   const [estado, setEstado] = useState("asdasd"); //ESTADO PRINCIPAL
   const [estadoHTML, setEstadoHtml] = useState(""); //ESTADO PARA PLANTILLA HTML
   const [estadoCSS, setEstadoCSS] = useState(""); //ESTADO PARA LOS ESTILOS CSS
-  const [estilos, setEstilos] = useState(true);
+  const [estilos, setEstilos] = useState(false);
   const [darkModeOn, setDarkModeOn] = useState(true);
+  const [focus, setFocus] = useState(false)
+  const [focusOn, setFocusOn] = useState(true)
+
 
   const HTML = () => {
     //PLANTILLA HTML
@@ -68,26 +71,39 @@ const Playground = () => {
     setEstado(html);
   }, [estadoCSS]);
 
+  const cambiarEstilos = () => {
+    setEstilos(false)
+    setFocus(false)
+    setFocusOn(true)
+  }
+
+  const cambiarEstilosOn = () => {
+    setEstilos(true)
+    setFocusOn(false)
+    setFocus(true)
+  }
 
   return (
     <div className="container">
       <div className="container__playground">
         <div className="container__playground__areas">
           <section className="container__playground__areas__buttons">
-            <div onClick={() => setEstilos(false)}>
+            <div onClick={() => cambiarEstilos()}>
               <ButonToggle
                 text={"HTML"}
                 img={
                   "https://res.cloudinary.com/dcf9eqqgt/image/upload/v1713646230/ASTRO%20IO/html-5_aja4ow.png"
                 }
+                focus={focus}
               />
             </div>
-            <div onClick={() => setEstilos(true)}>
+            <div onClick={() => cambiarEstilosOn()}>
               <ButonToggle
                 text={"CSS"}
                 img={
                   "https://res.cloudinary.com/dcf9eqqgt/image/upload/v1713646247/ASTRO%20IO/css-3_y1vgvm.png"
                 }
+                focus={focusOn}
               />
             </div>
           </section>
