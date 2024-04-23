@@ -1,0 +1,70 @@
+.container__header{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    padding: 30px;
+
+}
+.container__header__titulo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container__header__titulo h1{
+    color: white;
+    text-align: start;
+    font-size: 50px;
+    width: 600px;
+    font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.container__header__tarjetasFlotantes{
+    width: 50%;
+}
+
+span{
+    color: rgb(217, 50, 248);
+}
+
+
+.container__header__titulo__button {
+   width: 100%;
+}
+
+
+
+.container__header__titulo__button button{
+    width: 120px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(217, 50, 248) ;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.container__titulo__button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container__titulo__button button{
+    width: 120px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(217, 50, 248) ;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+
+

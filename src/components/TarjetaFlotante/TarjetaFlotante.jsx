@@ -1,10 +1,10 @@
-
-  function Test() {
+import '../TarjetaFlotante/tarjetaFlotante.css'
+  function TarjetaFlotante( {componente = "asdasd"} ) {
   return (
-    <div className="flex gap-4">
-      
+    <div >
+      {componente}
     </div>
   );
 }
 
-export default Test
+export default TarjetaFlotante

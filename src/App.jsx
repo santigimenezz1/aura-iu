@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './components/Header/Header'
 import NavBar from './components/NavBar/NavBar'
 import Playground from './components/Playground/Playground'
 import FloatingDiv from './components/TarjetaFlotante/TarjetaFlotante'
@@ -8,10 +9,8 @@ function App() {
 
   return (
     <>
-    <NavBar />
-     <Playground />
-     <TarjetaIframe />
-     <FloatingDiv />
+     <NavBar />
+     <Header />
     </>
   )
 }

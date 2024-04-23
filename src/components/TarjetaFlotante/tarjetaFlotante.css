@@ -1,7 +1,15 @@
-#flotante {
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.flotante {
+  position: relative;
+  animation: flotar 2s ease-in-out infinite alternate;
+  color: white;
+  display: flex;
+}
+
+@keyframes flotar {
+  0% {
+      top: 0;
   }
-  
+  100% {
+      top: 20px; /* Puedes ajustar esta cantidad para cambiar la distancia del movimiento */
+  }
+}
