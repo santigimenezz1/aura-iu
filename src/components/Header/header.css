@@ -2,7 +2,10 @@
     width: 100vw;
     height: 700px;
     display: flex;
-    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
 
 }
 .container__header__titulo{
@@ -23,6 +26,7 @@
 
 .container__header__tarjetasFlotantes{
     width: 50%;
+    display: flex;
 }
 
 span{
