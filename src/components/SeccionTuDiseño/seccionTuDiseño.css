@@ -1,0 +1,18 @@
+.seccionTuDiseño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.seccionTuDiseño__descripcion {
+    padding-left: 140px;
+}
+.seccionTuDiseño__descripcion h1 {
+    color: white;
+    text-align: start;
+    font-size: 50px;
+    width: 600px;
+    font-family: __Inter_16e16b, __Inter_Fallback_16e16b, ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}

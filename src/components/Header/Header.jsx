@@ -2675,7 +2675,7 @@ const Header = () => {
             <div className='container__header__titulo'>
                 <div className='container__titulo__button'>
                 <h1>Make <span>beautiful</span> websites regardless of your design experience.</h1>
-                <button>Get started</button>
+                <button>Browse all elements</button>
                 </div>
             </div>
             <div className='container__header__tarjetasFlotantes'>
