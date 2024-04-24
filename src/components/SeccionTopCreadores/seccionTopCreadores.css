@@ -1,0 +1,37 @@
+
+
+
+.seccionTopCreadores{
+    border: 1px solid red;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-y: hidden;
+
+}
+
+.seccionTopCreadores h1{
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.container__creador {
+    color: white;
+    font-size: 15;
+    padding: 13px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    animation: floatAnimation 20s infinite alternate; /* Aplicamos la animación de flotación */
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateX(0); /* Sin traslación */
+    }
+    100% {
+      transform: translateX(900px); /* Traslación hacia la derecha */
+    }
+  }
+  

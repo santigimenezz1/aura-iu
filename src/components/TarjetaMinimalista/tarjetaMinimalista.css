@@ -19,7 +19,6 @@
 
 .tarjetaMinimalista__logo-titulo h1{
     font-size: 22px;
-    font-family: Inter_16e16b, __Inter_Fallback_16e16b, ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .tarjetaMinimalista__logo-titulo img{
     width: 25px;
@@ -29,5 +28,4 @@
 .tarjetaMinimalista__descripcion h3{
     color: rgb(161, 161, 170);
     font-size: 18px;
-    font-family: Inter_16e16b, __Inter_Fallback_16e16b, ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
