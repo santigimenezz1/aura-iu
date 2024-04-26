@@ -33,7 +33,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
-    animation: floatAnimation 15s infinite alternate; /* Aplicamos la animación de flotación */
+    animation: floatAnimation 18s infinite alternate; /* Aplicamos la animación de flotación */
   }
   .container__creador20 {
     color: white;
