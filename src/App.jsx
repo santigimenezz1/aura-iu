@@ -19,10 +19,10 @@ function App() {
      <NavBar />
      <Header />
      <div style={{display:"flex", width:"100%", justifyContent:"center", gap:"15px", marginTop:"70px"}}>
-     <TarjetaMinimalista text={"Rápido"} />
-     <TarjetaMinimalista text={"Creativo"}/>
-     <TarjetaMinimalista text={"Practica"} />
-     <TarjetaMinimalista text={"Comparte"}/>
+     <TarjetaMinimalista titulo={"Fast"} imagen={"https://res.cloudinary.com/dcf9eqqgt/image/upload/v1714141662/ASTRO%20IO/ligero_ope4uf.png"} descripcion={"Built on top of CSS, which means no runtime styles, and no unnecessary classes in your bundle."} />
+     <TarjetaMinimalista titulo={"Creative"} imagen={"https://res.cloudinary.com/dcf9eqqgt/image/upload/v1714141662/ASTRO%20IO/creatividad-2_ovblky.png"} descripcion={"Deploy all your creativity and be inspired by this wonderful community"}/>
+     <TarjetaMinimalista titulo={"Practice"}  imagen={"https://res.cloudinary.com/dcf9eqqgt/image/upload/v1714141662/ASTRO%20IO/lapiz_lktmpa.png"} descripcion={"Practice a lot and improve your programming logic with this wonderful tool"}/>
+     <TarjetaMinimalista titulo={"Share"} imagen={"https://res.cloudinary.com/dcf9eqqgt/image/upload/v1714141662/ASTRO%20IO/valor_vjpqkm.png"} descripcion={"Share your wonderful creations and use the creations of the Aura community as inspiration :)"}/>
      </div>
      <div style={{marginTop:"120px"}}>
      <SeccionTuDiseño />

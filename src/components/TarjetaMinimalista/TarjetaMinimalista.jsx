@@ -1,14 +1,14 @@
 import '../TarjetaMinimalista/tarjetaMinimalista.css'
 
-const TarjetaMinimalista = ( {text} ) => {
+const TarjetaMinimalista = ( {titulo, descripcion, imagen} ) => {
     return (
         <div className='tarjetaMinimalista'>
             <div className='tarjetaMinimalista__logo-titulo'>
-                <img src='https://res.cloudinary.com/dcf9eqqgt/image/upload/v1713954951/ASTRO%20IO/creatividad_ajxkkq.png'></img>
-                <h1>{text}</h1>
+                <img src={imagen}></img>
+                <h1>{titulo}</h1>
             </div>
             <div className='tarjetaMinimalista__descripcion'>
-            <h3>Provides a plugin to customize default themes, you can change all semantic tokens or create an entire new theme. </h3>
+            <h3>{descripcion}</h3>
             </div>
 
         </div>
