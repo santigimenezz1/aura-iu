@@ -12,9 +12,23 @@
 
 .tarjetaSeccionComponente___icon{
     width: 40px;
-    color: rgb(113, 113, 122);
+    color: rgb(202, 59, 247);
 }
+.tarjetaSeccionComponente___icon__active{
+    width: 40px;
+    color: rgb(113, 113, 122);
+
+}
+
+
+
+
 .tarjetaSeccionComponente___titulo{
+    color: rgb(202, 59, 247);
+    font-size: 16px;
+}
+.tarjetaSeccionComponente___titulo__active{
     color: rgb(113, 113, 122);
     font-size: 16px;
 }
+

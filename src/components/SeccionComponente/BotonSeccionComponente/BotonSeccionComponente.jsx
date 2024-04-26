@@ -1,12 +1,12 @@
  import '../BotonSeccionComponente/botonSeccionComponente.css'
  import BrushIcon from '@mui/icons-material/Brush';
 
-const BotonSeccionComponente = ( {text} ) => {
+const BotonSeccionComponente = ( {text, estado, setActive} ) => {
     
     return (
-        <div className="tarjetaSeccionComponente">
-            <BrushIcon className='tarjetaSeccionComponente___icon' fontSize='large'/>
-            <h3 className='tarjetaSeccionComponente___titulo'>{text}</h3>
+        <div className="tarjetaSeccionComponente" onClick={()=>setActive(text)}>
+            <BrushIcon className={estado === text ? 'tarjetaSeccionComponente___icon' : 'tarjetaSeccionComponente___icon__active' }fontSize='large'/>
+            <h3 className={estado === text ? 'tarjetaSeccionComponente___titulo' : 'tarjetaSeccionComponente___titulo__active'}>{text}</h3>
         </div>
     )
 }
