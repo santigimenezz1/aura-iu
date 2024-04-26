@@ -1,19 +1,20 @@
  import '../SeccionTopCreadores/seccionTopCreadores.css'
 import TarjetaPerfil from './TarjetaPerfil/TarjetaPerfil'
-const SeccionTopCreadores = () => {
+const SeccionTopCreadores = ( {seconds} ) => {
    let variable = [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]
     return (
         <div style={{marginTop:"0px", height:"70px"}} className='container'> 
-            <div className='container__creador'>
                 {
                  variable.map((tarjeta)=>(
-                    <div className='container__creador'>
-                        <TarjetaPerfil />
+         <div className={
+            seconds === 10 ? "container__creador10" :
+            seconds === 15 ? "container__creador15" :
+            "container__creador20"
+}>                        <TarjetaPerfil />
                          </div>
                  ))
                 }       
             </div>
-        </div>
     )
 }
 

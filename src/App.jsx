@@ -29,9 +29,9 @@ function App() {
      </div>
      <div style={{marginTop:"80px", marginBottom:"60px", height:"500px", background:"black", padding:"20px", display:"flex", flexDirection:"column", gap:"40px"}}>
       <h1 className='text__contenedor' style={{color:"white", textAlign:"center"}}>Top Creators</h1>
-     <SeccionTopCreadores />
-     <SeccionTopCreadores />
-     <SeccionTopCreadores />
+     <SeccionTopCreadores seconds={10}/>
+     <SeccionTopCreadores seconds={20} />
+     <SeccionTopCreadores seconds={30}/>
      </div>
      <SeccionComponente />
      <SeccionPracticaCodigo />

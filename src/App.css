@@ -9,6 +9,7 @@
 body{
   background: #000000;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .content{

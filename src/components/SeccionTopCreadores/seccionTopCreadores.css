@@ -16,7 +16,26 @@
     font-size: 15px;
 }
 
-.container__creador {
+
+  .container__creador10 {
+    color: white;
+    font-size: 15;
+    padding: 13px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    animation: floatAnimation 10s infinite alternate; /* Aplicamos la animación de flotación */
+  }
+  .container__creador15 {
+    color: white;
+    font-size: 15;
+    padding: 13px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    animation: floatAnimation 15s infinite alternate; /* Aplicamos la animación de flotación */
+  }
+  .container__creador20 {
     color: white;
     font-size: 15;
     padding: 13px;
@@ -25,6 +44,8 @@
     margin-bottom: 50px;
     animation: floatAnimation 20s infinite alternate; /* Aplicamos la animación de flotación */
   }
+  
+  
   
   @keyframes floatAnimation {
     0% {
