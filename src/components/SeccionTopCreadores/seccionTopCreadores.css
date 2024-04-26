@@ -24,7 +24,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
-    animation: floatAnimation 10s infinite alternate; /* Aplicamos la animación de flotación */
+    animation: floatAnimation 30s infinite alternate; /* Aplicamos la animación de flotación */
   }
   .container__creador15 {
     color: white;
@@ -33,7 +33,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
-    animation: floatAnimation 18s infinite alternate; /* Aplicamos la animación de flotación */
+    animation: floatAnimation30 30s infinite alternate; /* Aplicamos la animación de flotación */
   }
   .container__creador20 {
     color: white;
@@ -42,7 +42,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
-    animation: floatAnimation 20s infinite alternate; /* Aplicamos la animación de flotación */
+    animation: floatAnimation20 30s infinite alternate; /* Aplicamos la animación de flotación */
   }
   
   
@@ -52,7 +52,29 @@
       transform: translateX(0); /* Sin traslación */
     }
     100% {
+      transform: translateX(-900px); /* Traslación hacia la derecha */
+    }
+  }
+
+
+  @keyframes floatAnimation20 {
+    0% {
+      transform: translateX(0); /* Sin traslación */
+    }
+    100% {
+      transform: translateX(-900px); /* Traslación hacia la derecha */
+    }
+  }
+  
+
+
+  @keyframes floatAnimation30 {
+    0% {
+      transform: translateX(0); /* Sin traslación */
+    }
+    100% {
       transform: translateX(900px); /* Traslación hacia la derecha */
     }
   }
+  
   
