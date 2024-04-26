@@ -1,0 +1,58 @@
+.seccionComponente{
+    width: 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    padding-left: 150px;
+    
+  
+}
+.container__seccionComponente__tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.seccionComponente__tarjetas{
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.seccionTuDiseño{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.seccionTuDiseño__descripcion {
+    padding-left: 140px;
+}
+.seccionTuDiseño__descripcion h1 {
+    color: white;
+    text-align: start;
+    font-size: 50px;
+    width: 600px;
+
+}
+
+
+.seccionComponente__descripcion{
+    width: 600px;
+}
+
+.seccionComponente__descripcion{
+    color: white;
+    text-align: start;
+    font-size: 50px;
+    width: 750px;
+    padding-left: 140px;
+    margin-bottom: 30px;
+}
+.seccionComponente__span{
+    color: rgb(35, 132, 242);
+}

@@ -1,0 +1,20 @@
+.tarjetaSeccionComponente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid black;
+    width: 70px;
+    cursor: pointer;
+
+}
+
+.tarjetaSeccionComponente___icon{
+    width: 40px;
+    color: rgb(113, 113, 122);
+}
+.tarjetaSeccionComponente___titulo{
+    color: rgb(113, 113, 122);
+    font-size: 16px;
+}

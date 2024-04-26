@@ -37,3 +37,16 @@
     font-size: 18px;
     color: white;
 }
+
+.container__navBar__perfil__user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 4px;
+}
+.container__navBar__perfil__user:hover{
+    background-color: rgb(29, 27, 27);
+}

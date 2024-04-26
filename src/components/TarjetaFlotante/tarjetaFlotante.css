@@ -10,6 +10,6 @@
       top: 0;
   }
   100% {
-      top: 20px; /* Puedes ajustar esta cantidad para cambiar la distancia del movimiento */
+      top: 12px; /* Puedes ajustar esta cantidad para cambiar la distancia del movimiento */
   }
 }
