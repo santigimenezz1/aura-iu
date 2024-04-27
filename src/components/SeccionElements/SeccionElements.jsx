@@ -1,4 +1,5 @@
- import NavBar from '../NavBar/NavBar'
+ import Footer from '../Footer/Footer'
+import NavBar from '../NavBar/NavBar'
 import BotonCategoria from '../NavBar/SelectorCategoria/BotonCategoria/BotonCategoria'
 import '../SeccionElements/seccionElements.css'
 import BotonNextPage from './BotonNextPage/BotonNextPage'
@@ -52,6 +53,7 @@ const SeccionElements = () => {
                  <div className='container__botonNext'>
                  <BotonNextPage />
                  </div>
+                 <Footer />
                
 
 
