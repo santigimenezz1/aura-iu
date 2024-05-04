@@ -2,14 +2,14 @@
 .container {
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 50px;
 }
 
 /*CONTAINER DEL COMPONENTE---------------------- */
 
 .container__playground {
-  width: 1200px;
+  width: 1100px;
   height: 600px;
   display: flex;
   flex-direction: row-reverse;

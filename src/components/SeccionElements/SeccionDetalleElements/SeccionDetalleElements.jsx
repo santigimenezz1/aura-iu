@@ -1,10 +1,12 @@
- import Footer from '../Footer/Footer'
-import NavBar from '../NavBar/NavBar'
-import BotonCategoria from '../NavBar/SelectorCategoria/BotonCategoria/BotonCategoria'
-import '../SeccionElements/seccionElements.css'
-import BotonNextPage from './BotonNextPage/BotonNextPage'
-import TarjetaElements from './TarjetaElements/TarjetaElements'
-const SeccionElements = () => {
+import Footer from '../../Footer/Footer'
+import NavBar from '../../NavBar/NavBar'
+import Playground from '../../Playground/Playground'
+import SeccionTuDiseño from '../../SeccionTuDiseño/SeccionTuDiseño'
+import TarjetaIframe from '../../TarjetaIframe/TarjetaIframe'
+import BotonNextPage from '../BotonNextPage/BotonNextPage'
+import '../SeccionDetalleElements/seccionDetalleElements.css'
+import TarjetaElements from '../TarjetaElements/TarjetaElements'
+const SeccionDetalleElements = () => {
     return (
         <div className="seccionElements">
                  <NavBar/>
@@ -24,25 +26,14 @@ const SeccionElements = () => {
                  </div>
                  <div className='container__general__tarjetas'>
                     <div className='container__general__tarjetas__filtros'>
-                        <h1>Buttons</h1>
-                        <h2>Open-Source UI elements made with CSS </h2>
+                        <div className='container__nombreDetalle'>
+                        <button className='boton__back'>Volver</button>
+                        <h2>Nombre del componente</h2>
+                        </div>
                     </div>
                  <div className='container__seccionElements__tarjetas__tarjetasElements'>
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
-                    <TarjetaElements />
+                  <Playground />
+
                  </div>
                  </div>
                  </section>
@@ -56,4 +47,4 @@ const SeccionElements = () => {
         </div>
     )
 }
-export default SeccionElements
+export default SeccionDetalleElements

@@ -12,8 +12,6 @@
     width: 300px;
     gap: 10px;
     align-items: center;
-
-
 }
 .container__seccionElements__tarjetas__navegacion button {
     width: 250px;
@@ -36,7 +34,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     gap: 15px;
     padding: 10px;
 }
@@ -84,4 +81,22 @@
     align-items: end;
     padding-right: 60px;
 
+}
+
+
+.boton__back{
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    background: #2e2c2c;
+    color: white;
+    font-weight: bold;
+}
+
+.container__nombreDetalle{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
 }
